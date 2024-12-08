@@ -1,0 +1,25 @@
+<div>
+  <h2>Historique des Commandes</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Commande ID</th>
+      <th>Date</th>
+      <th>Produit</th>
+      <th>Prix</th>
+      <th>Quantité</th>
+    <!--  <th>Statut</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let commande of commandes">
+      <td>{{ commande.commandeId }}</td>
+      <td>{{ commande.dateCommande | date: 'short' }}</td>
+      <td>{{ commande.produit.nom }}</td>
+      <td>{{ commande.prix }}</td>
+      <td>{{ commande.quantite }}</td>
+      <!--<td>{{ commande.statue }}</td>-->
+    </tr>
+    </tbody>
+  </table>
+</div>

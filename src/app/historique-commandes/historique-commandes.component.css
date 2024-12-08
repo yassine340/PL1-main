@@ -1,0 +1,55 @@
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.container {
+  width: 80%; /* Ajuste la largeur à 80% de l'écran ou une valeur de ton choix */
+  max-width: 1200px; /* Limite la largeur maximale */
+  margin: 0 auto; /* Centre le conteneur */
+  padding: 0 20px; /* Ajoute un peu d'espace interne */
+}
+
+table {
+  width: 100%; /* Le tableau prendra toute la largeur du conteneur */
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}

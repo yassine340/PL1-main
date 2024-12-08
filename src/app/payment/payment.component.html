@@ -1,0 +1,16 @@
+<app-nav-bar></app-nav-bar>
+<div class="payment-container">
+  <h2>Payment Information</h2>
+
+  <form (ngSubmit)="onSubmit($event)">
+    <div id="card-element">
+      <!-- L'élément de carte Stripe sera inséré ici -->
+    </div>
+
+    <button type="submit" [disabled]="!stripe || !elements">Pay</button>
+  </form>
+
+  <div *ngIf="paymentStatus" class="payment-status">
+    <p>{{ paymentStatus }}</p>
+  </div>
+</div>
